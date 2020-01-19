@@ -1,0 +1,69 @@
+body {
+  background-color: #4d4d4d;
+  background-image: url("wallpaper.jpg");
+  background-position: center;
+  background-margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2{
+	color: #E6E6FA;
+	font-family: Century Gothic, sans-serif;
+	font-size: 50;
+	text-align: center;
+}
+
+h2{
+  font-size: 30;
+}
+
+p {
+  color: #E6E6FA;
+  font-family: Century Gothic, sans-serif;
+  font-size: 20;
+  text-align: center;
+}
+
+button, input[type=submit] {
+  background-color: white;
+  font-family: Century Gothic, sans-serif;
+  display: inline-block;
+  text-align: bottom;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-left:auto;
+}
+
+button:hover{
+  background-color: #E6E6FA;
+}
+
+input[type=submit]:hover{
+  background-color: #E6E6FA;
+}
+
+textarea{
+  border: none;
+  border-bottom: 2px solid #E6E6FA;
+  width: 65%;
+  height: 25%;
+  background-color:  #E6E6FA;
+  resize: none;
+  overflow: scroll;
+}
+
+textarea:focus{
+
+}
+
+textarea[id = URLInput]{
+  border-bottom: 2px solid #E6E6FA;
+  height: 10%;
+}
+textarea[id = titleInput]{
+  border-bottom: 2px solid #E6E6FA;
+  height: 10%;
+}
