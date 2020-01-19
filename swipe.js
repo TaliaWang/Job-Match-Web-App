@@ -121,7 +121,7 @@ function determineSwipeDirection() {
 			//swipedElement.style.backgroundColor = 'orange';
 		}
     else ( swipeDirection == 'right' ) {
-      window.open("https://google.com", "_blank"); // replace with database gathering
+      window.open("https://youtube.com", "_blank"); // replace with database gathering
       document.getElementById("titleText").innerHTML = "text title changed!";
       document.getElementById("descriptionText").innerHTML = "Description changed!";
       document.getElementById("requiredSkillsText").innerHTML = "skills changed!";
