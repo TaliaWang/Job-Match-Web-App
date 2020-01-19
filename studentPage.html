@@ -1,28 +1,31 @@
-
 <html>
   <head>
     <title>Student Page</title>
     <link rel="stylesheet" href="maincss.css">
+    <script src = "db-control.js"></script>
     <script src="mainjavascript.js"></script>
+
+
   </head>
     <body>
       <!-- <script src = "swipe.js"></script> -->
-      <div id="swipeBox" ontouchstart="touchStart(event,'swipeBox');"
+      <!-- <div id="swipeBox" ontouchstart="touchStart(event,'swipeBox');"
        ontouchend="touchEnd(event);" ontouchmove="touchMove(event);"
-       ontouchcancel="touchCancel(event);">
+       ontouchcancel="touchCancel(event);"> -->
 
       <h1 id = "titleText">Job Title</h1>
+      <h2 id = "companyText">Company</h2>
 
     <!--  <h1>Application Url</h1> -->
-      <h2>Description</h2>
+      <h3>Description</h3>
       <p id="descriptionText"></p>
 
-      <h2>Required Skills</h2>
+      <h3>Required Skills</h3>
       <p id="requiredSkillsText"></p>
 
       <button id = "backBtn" class = "button" type="button" onClick="location.href='index.html'">Back</button>
       <button id = "applyBtn" class = "button" type ="button" onClick="linkToApplication()">Apply</button>
       <button id = "rejectBtn" class = "button" type ="button" onClick="nextListing()">Reject</button>
-  </div>
+      <!-- </div> -->
     </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "sql",
+  "version": "1.0.0",
+  "description": "------------------------------------------------------------------------\r This is the project README file. Here, you should describe your project.\r Tell the reader (someone who does not know anything about this project)\r all he/she needs to know. The comments should usually include at least:\r ------------------------------------------------------------------------",
+  "main": "db-control.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}

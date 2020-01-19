@@ -6,11 +6,14 @@
   </head>
 
   <body>
+    <script src="db-control.js"></script>
     <script src="mainjavascript.js"></script>
 
     <form id = "employerForm" onsubmit="submitEmployerData()">
       <h1>Job Title</h1>
         <textarea id = "titleInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+      <h1>Company</h1>
+          <textarea id = "companyInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
       <h1>Application Url</h1>
         <textarea id = "URLInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
       <h1>Description</h1>
