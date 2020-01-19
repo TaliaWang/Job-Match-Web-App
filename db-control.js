@@ -58,13 +58,13 @@ var db = mysql.createConnection({
    }
  });
 
- export function addJob(jobTitle, company, url, description, skills)
+ function addJob(jobTitle, company, url, description, skills)
  {
    var newPlace = jobsUnseen.length();
    jobsUnseen.push(newPlace);
    var sql = "INSERT INTO jobs VALUES (" + newPlace +", " + jobTitle + " ," + company +","+ skills+", "+description+","+ url+")";
    db.query(sql, function (err, result) {
-     if (err){}
+     if (err){console.log("JOB ERR");}
    });
  }
 
@@ -123,18 +123,18 @@ var db = mysql.createConnection({
  }
 
 
- export function peekJob()
+ function peekJob()
  {
    var id = [jobsUnseen[0]];
-   var sql = "SELECT company FROM jobs WHERE jobID = " + id;
-   db.squery(sql, function(err, result))
+   var sql = "SELECT company FROM jobs" + id;
+   db.query(sql, function(err, result)
    {
      if (err)
-     {}
+     {console.log("peek ERR");}
    });
  }
 
-export function peekNI()
+function peekNI()
 {
   var id = jobsUnseen[0];
   var sql = "SELECT company FROM ni WHERE jobID = " + id;
@@ -314,3 +314,22 @@ export function peekNI()
 //app.listen('3306', () => {
   //console.log('Server started on port 3000');
 //})
+
+function submitEmployerData()
+  {
+      var inputs = document.getElementById ("employerForm");
+      addJob(inputs[0], inputs[1], inputs[2], inputs[3], inputs[4]);
+      /*for (var i = 0; i < inputs.length - 1; i++) //
+      {
+        //document.write(inputs[i].value);
+      }*/
+      alert("Job posting submitted successfully.");
+    }
+
+function  linkToApplication(){
+  window.open("https://google.com", "_blank"); // replace with database gathering
+  document.getElementById("titleText").innerHTML = peekJob();
+  document.getElementById("companyText").innerHTML = "company changed!";
+  document.getElementById("descriptionText").innerHTML = "Description changed!";
+  document.getElementById("requiredSkillsText").innerHTML = "skills changed!";
+}

@@ -7,23 +7,23 @@
 
   <body>
     <script src="db-control.js"></script>
-    <script src="mainjavascript.js"></script>
+    <!-- <script src="mainjavascript.js"></script> -->
 
     <form id = "employerForm" onsubmit="submitEmployerData()">
       <h1>Job Title</h1>
-        <textarea id = "titleInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+        <textarea id = "titleInput" form_id= "employerForm" TYPE="text" NAME="jobTitle" VALUE="" wrap="hard" required></textarea>
       <h1>Company</h1>
-          <textarea id = "companyInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+          <textarea id = "companyInput" form_id= "employerForm" TYPE="text" NAME="company" VALUE="" wrap="hard" required></textarea>
       <h1>Application Url</h1>
-        <textarea id = "URLInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+        <textarea id = "URLInput" form_id= "employerForm" TYPE="text" NAME="url" VALUE="" wrap="hard" required></textarea>
       <h1>Description</h1>
-        <textarea id = "descriptionInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+        <textarea id = "descriptionInput" form_id= "employerForm" TYPE="text" NAME="description" VALUE="" wrap="hard" required></textarea>
       <h1>Required Skills</h1>
-        <textarea id = "skillsInput" form_id= "employerForm" TYPE="text" NAME="inputbox" VALUE="" wrap="hard" required></textarea>
+        <textarea id = "skillsInput" form_id= "employerForm" TYPE="text" NAME="skills" VALUE="" wrap="hard" required></textarea>
 
       <h1>
         <button id = "backBtn" class = "button" type="button" onClick="location.href='index.html'">Back</button>
-        <input id = "submitButton" type ="submit" value = "Submit">
+        <input id = "submitButton" type ="submit" value = "Submit" onClick=>
       </h1>
     </form>
 
